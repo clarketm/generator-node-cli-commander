@@ -8,7 +8,9 @@
     "email": "travis.m.clarke@gmail.com",
     "url": "https://www.travismclarke.com/"
   },
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "main": "generators/index.js",
   "keywords": [
     "yeoman-generator",
@@ -24,11 +26,9 @@
     "nodejs"
   ],
   "devDependencies": {
+    "@types/jest": "^22.2.3",
     "codecov": "^3.0.2",
     "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-config-xo": "^0.20.1",
-    "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.0.6",
     "lint-staged": "^6.1.1",
     "nsp": "^2.8.0",
@@ -53,6 +53,7 @@
     "lint": "eslint --fix .",
     "prettier": "prettier --write './**/*.{js,json,css,md}'",
     "test:cov": "jest --coverage",
+    "test:cov:upload": "yarn test:cov && codecov",
     "test": "jest"
   },
   "husky": {
@@ -61,7 +62,16 @@
     }
   },
   "lint-staged": {
-    "*.js": [["eslint --fix", "git add"], ["prettier --write", "git add"]]
+    "*.js": [
+      [
+        "eslint --fix",
+        "git add"
+      ],
+      [
+        "prettier --write",
+        "git add"
+      ]
+    ]
   },
   "repository": {
     "type": "git",
