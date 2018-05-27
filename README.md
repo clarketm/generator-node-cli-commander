@@ -1,4 +1,4 @@
-# generator-node-cli-commander [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-node-cli-commander [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > Node command line application generator.
 
@@ -30,9 +30,7 @@ MIT © [Travis Clarke](https://www.travismclarke.com/)
 
 [npm-image]: https://badge.fury.io/js/generator-node-cli-commander.svg
 [npm-url]: https://npmjs.org/package/generator-node-cli-commander
-[circleci-image]: https://circleci.com/gh/clarketm/generator-node-cli-commander.svg?style=shield&circle-token=51853e44a4aff2fef83b0b89407ed15288bd641c
+[circleci-image]: https://circleci.com/gh/clarketm/generator-node-cli-commander.svg?style=shield
 [circleci-url]: https://circleci.com/gh/clarketm/generator-node-cli-commander
 [daviddm-image]: https://david-dm.org/clarketm/generator-node-cli-commander.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/clarketm/generator-node-cli-commander
-[coveralls-image]: https://coveralls.io/repos/clarketm/generator-node-cli-commander/badge.svg
-[coveralls-url]: https://coveralls.io/r/clarketm/generator-node-cli-commander
