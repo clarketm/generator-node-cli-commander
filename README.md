@@ -1,4 +1,4 @@
-# generator-node-cli-commander [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-node-cli-commander [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Code Coverage][codecov-image]][codecov-url]
 
 > Node command line application generator.
 
@@ -34,3 +34,5 @@ MIT © [Travis Clarke](https://www.travismclarke.com/)
 [circleci-url]: https://circleci.com/gh/clarketm/generator-node-cli-commander
 [daviddm-image]: https://david-dm.org/clarketm/generator-node-cli-commander.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/clarketm/generator-node-cli-commander
+[codecov-image]: https://img.shields.io/codecov/c/github/clarketm/generator-node-cli-commander.svg
+[codecov-url]: https://codecov.io/gh/clarketm/generator-node-cli-commander
