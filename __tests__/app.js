@@ -18,7 +18,6 @@ describe("generator-node-cli-commander:app", () => {
 
   it("should creates files", () => {
     assert.file([
-      ".circleci/config.yml",
       ".eslintrc",
       ".gitattributes",
       ".npmrc",

@@ -8,15 +8,17 @@ const { error } = console;
 const { exit, argv } = process;
 
 commander.version(version).on("command:*", () => {
-  error(`Invalid command: ${commander.args.join(" ")}\nSee --help for a list of available commands.`);
+  error(
+    `Invalid command: ${commander.args.join(" ")}\nSee --help for a list of available commands.`
+  );
   exit(1);
 });
 
-commander
-  .command()
-  .description()
-  .option()
-  .action();
+// commander
+//   .command()
+//   .description()
+//   .option()
+//   .action();
 
 commander.parse(argv);
 

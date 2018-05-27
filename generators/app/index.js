@@ -83,7 +83,6 @@ module.exports = class extends Generator {
         const dest = this.destinationPath(this.dir);
 
         const files = [
-          ".circleci",
           ".eslintrc",
           ".gitattributes",
           ".npmrc",
