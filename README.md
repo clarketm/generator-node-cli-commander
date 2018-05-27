@@ -28,7 +28,7 @@ yo node-cli-commander
 
 MIT © [Travis Clarke](https://www.travismclarke.com/)
 
-[npm-image]: https://badge.fury.io/js/generator-node-cli-commander.svg
+[npm-image]: https://img.shields.io/npm/v/generator-node-cli-commander.svg
 [npm-url]: https://npmjs.org/package/generator-node-cli-commander
 [circleci-image]: https://circleci.com/gh/clarketm/generator-node-cli-commander.svg?style=shield
 [circleci-url]: https://circleci.com/gh/clarketm/generator-node-cli-commander
