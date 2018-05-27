@@ -49,9 +49,10 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublishOnly": "nsp check && yarn lint && yarn prettier && yarn test",
+    "prepublishOnly": "nsp check && yarn lint && yarn prettier && yarn test && yarn diff",
     "lint": "eslint --fix .",
     "prettier": "prettier --write './**/*.{js,json,css,md}'",
+    "diff": "sh ./diff.sh",
     "test:cov": "jest --coverage",
     "test:cov:upload": "yarn test:cov && codecov",
     "test": "jest"
