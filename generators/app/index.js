@@ -24,7 +24,7 @@ module.exports = class extends Generator {
     this.description = {
       type: String,
       alias: "d",
-      desc: "Command line app description (e.g. )"
+      desc: "Command line app description"
     };
 
     this.argument("name", this.name);
@@ -37,24 +37,7 @@ module.exports = class extends Generator {
   prompting() {
     this.log(yosay("Welcome to the " + chalk.blue("node-cli-commander") + " generator!"));
 
-    const prompts = [];
-
-    if (!this.options.description) {
-      prompts.unshift({
-        type: "input",
-        name: "description",
-        message: this.description.desc,
-        default: "Command line tool"
-      });
-    }
-
-    if (!this.options.binName) {
-      prompts.unshift({
-        type: "input",
-        name: "binName",
-        message: this.binName.desc
-      });
-    }
+    let prompts = [];
 
     if (!this.options.name) {
       prompts.unshift({
@@ -66,9 +49,32 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(answer => {
       this.name = this.options.name || answer.name;
-      this.binName = this.options.binName || answer.binName;
-      this.description = this.options.description || answer.description;
       this.dir = this.name;
+
+      prompts = [];
+
+      if (!this.options.description) {
+        prompts.unshift({
+          type: "input",
+          name: "description",
+          message: this.description.desc,
+          default: "Command line tool"
+        });
+      }
+
+      if (!this.options.binName) {
+        prompts.unshift({
+          type: "input",
+          name: "binName",
+          message: this.binName.desc,
+          default: this.name
+        });
+      }
+
+      return this.prompt(prompts).then(answer => {
+        this.binName = this.options.binName || answer.binName;
+        this.description = this.options.description || answer.description;
+      });
     });
   }
 
