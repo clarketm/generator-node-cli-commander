@@ -1,6 +1,6 @@
 {
   "name": "generator-node-cli-commander",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node command line application generator using commander.js",
   "homepage": "https://github.com/clarketm/generator-node-cli-commander.git",
   "author": {
