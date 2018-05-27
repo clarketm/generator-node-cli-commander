@@ -13,12 +13,7 @@
     "bin": "./bin",
     "lib": "./lib"
   },
-  "files": [
-    "bin",
-    "lib",
-    "README.md",
-    "LICENSE.md"
-  ],
+  "files": ["bin", "lib", "README.md", "LICENSE.md"],
   "scripts": {
     "prepublishOnly": "yarn lint && yarn prettier && yarn test",
     "prettier": "prettier --write '**/*.{js,json,css,md}'",
@@ -32,10 +27,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{js,css,md}": ["prettier --write", "git add"]
   },
   "keywords": [
     "<%= binName %>",
