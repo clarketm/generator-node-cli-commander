@@ -17,14 +17,14 @@ module.exports = class extends Generator {
 
     this.binName = {
       type: String,
-      alias: 'b',
-      desc: "Command line binary name",
+      alias: "b",
+      desc: "Command line binary name"
     };
 
     this.description = {
       type: String,
-      alias: 'd',
-      desc: "Command line app description (e.g. )",
+      alias: "d",
+      desc: "Command line app description (e.g. )"
     };
 
     this.argument("name", this.name);
